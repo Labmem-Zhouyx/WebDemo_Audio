@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head><title>Syntactic Tree TTS</title></head>
+<body>
+<h2><center>Demo for baseline(WRF), proposed_1(BiRNN with BNM), proposed_2(BiRNN without BNM)</center></h2>
+<h2><center>The order of audio in every sample is RANDOM</center></h2>
+<h2>Reference for MOS</h2>
+<table style="width:100%">
+<tr>
+<th>A</th>
+<th>B</th>
+</tr>
+</table>
+<p>消灭了敌人的士兵。["消灭", "了", "敌人", "的", "士兵"]</p>
+<table style="width:100%">
+<tr>
+<th>0</th>
+<th>
+<audio controls style="width: 250px;">
+<source src="./wavs/audio_0/wav-batch_68_sentence_0-linear.wav" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+</th>
+<th>
+<audio controls style="width: 250px;">
+<source src="./wavs/audio_1/wav-batch_68_sentence_0-linear.wav" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+</th>
+</tr>
+</table>
+<p>三个学校的学生积极参加了这次活动。["三个", "学校", "的", "学生", "积极", "参加", "了", "这次", "活动"]</p>
+<table style="width:100%">
+<tr>
+<th>1</th>
+<th>
+<audio controls style="width: 250px;">
+<source src="./wavs/audio_0/wav-batch_69_sentence_0-linear.wav" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+</th>
+<th>
+<audio controls style="width: 250px;">
+<source src="./wavs/audio_1/wav-batch_69_sentence_0-linear.wav" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+</th>
+</tr>
+</table>
+<h2>MOS</h2>
+<table style="width:100%">
+<tr>
+<th>Sample 0</th>
+<th>Sample 1</th>
+</tr>
+</table>
+<p>白天鹅 在湖上游泳。 ["白天", "鹅", "在", "湖上", "游泳"]</p>
+<table style="width:100%">
+<tr>
+<th>0</th>
+<th>
+<audio controls style="width: 250px;">
+<source src="./wavs/audio_0/wav-batch_70_sentence_0-linear.wav" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+</th>
+<th>
+<audio controls style="width: 250px;">
+<source src="./wavs/audio_1/wav-batch_70_sentence_0-linear.wav" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+</th>
+</tr>
+</table>
+<p>乒乓球拍卖完了。 ["乒乓球拍", "卖", "完", "了"]</p>
+<table style="width:100%">
+<tr>
+<th>1</th>
+<th>
+<audio controls style="width: 250px;">
+<source src="./wavs/audio_1/wav-batch_71_sentence_0-linear.wav" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+</th>
+<th>
+<audio controls style="width: 250px;">
+<source src="./wavs/audio_0/wav-batch_71_sentence_0-linear.wav" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+</th>
+</tr>
+</table>
+<p>学生会讨论这个问题。["学生", "会", "讨论", "这个", "问题"]</p>
+<table style="width:100%">
+<tr>
+<th>2</th>
+<th>
+<audio controls style="width: 250px;">
+<source src="./wavs/audio_1/wav-batch_72_sentence_0-linear.wav" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+</th>
+<th>
+<audio controls style="width: 250px;">
+<source src="./wavs/audio_0/wav-batch_72_sentence_0-linear.wav" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+</th>
+</tr>
+</table>
+<p>该研究所得到的经费很多。["该", "研究", "所", "得到", "的", "经费", "很多"]</p>
+<table style="width:100%">
+<tr>
+<th>3</th>
+<th>
+<audio controls style="width: 250px;">
+<source src="./wavs/audio_1/wav-batch_73_sentence_0-linear.wav" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+</th>
+<th>
+<audio controls style="width: 250px;">
+<source src="./wavs/audio_0/wav-batch_73_sentence_0-linear.wav" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+</th>
+</tr>
+</table>
+<p>咬死了猎人的狗。["咬死", "了", "猎人", "的", "狗"]</p>
+<table style="width:100%">
+<tr>
+<th>4</th>
+<th>
+<audio controls style="width: 250px;">
+<source src="./wavs/audio_0/wav-batch_74_sentence_0-linear.wav" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+</th>
+<th>
+<audio controls style="width: 250px;">
+<source src="./wavs/audio_1/wav-batch_74_sentence_0-linear.wav" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+</th>
+</tr>
+</table>
+<p>能穿多少穿多少。["能", "穿", "多", "少", "穿", "多", "少"]</p>
+<table style="width:100%">
+<tr>
+<th>5</th>
+<th>
+<audio controls style="width: 250px;">
+<source src="./wavs/audio_0/wav-batch_75_sentence_0-linear.wav" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+</th>
+<th>
+<audio controls style="width: 250px;">
+<source src="./wavs/audio_1/wav-batch_75_sentence_0-linear.wav" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+</th>
+</tr>
+</table>
+<h2>Reference for ABTest</h2>
+<table style="width:100%">
+<tr>
+<th>A</th>
+<th>B</th>
+</tr>
+</table>
+<p>汉语的发音和比英语的难多了。</p>
+<table style="width:100%">
+<tr>
+<th>0</th>
+<th>
+<audio controls style="width: 250px;">
+<source src="./wavs/audio_1/wav-batch_3_sentence_0-linear.wav" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+</th>
+<th>
+<audio controls style="width: 250px;">
+<source src="./wavs/audio_2/wav-batch_3_sentence_0-linear.wav" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+</th>
+</tr>
+</table>
+<h2>ABTest</h2>
+<table style="width:100%">
+<tr>
+<th>Sample 0</th>
+<th>Sample 1</th>
+</tr>
+</table>
+<p>但是如今大部分的跨洋货运还是靠轮船。</p>
+<table style="width:100%">
+<tr>
+<th>0</th>
+<th>
+<audio controls style="width: 250px;">
+<source src="./wavs/audio_2/wav-batch_0_sentence_0-linear.wav" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+</th>
+<th>
+<audio controls style="width: 250px;">
+<source src="./wavs/audio_1/wav-batch_0_sentence_0-linear.wav" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+</th>
+</tr>
+</table>
+<p>这球的角度也太刁钻了太准了。</p>
+<table style="width:100%">
+<tr>
+<th>1</th>
+<th>
+<audio controls style="width: 250px;">
+<source src="./wavs/audio_1/wav-batch_1_sentence_0-linear.wav" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+</th>
+<th>
+<audio controls style="width: 250px;">
+<source src="./wavs/audio_2/wav-batch_1_sentence_0-linear.wav" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+</th>
+</tr>
+</table>
+<p>火车站就在剧院区附近。</p>
+<table style="width:100%">
+<tr>
+<th>2</th>
+<th>
+<audio controls style="width: 250px;">
+<source src="./wavs/audio_2/wav-batch_2_sentence_0-linear.wav" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+</th>
+<th>
+<audio controls style="width: 250px;">
+<source src="./wavs/audio_1/wav-batch_2_sentence_0-linear.wav" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+</th>
+</tr>
+</table>
+<p>周六晚上有六家电影院在放。</p>
+<table style="width:100%">
+<tr>
+<th>3</th>
+<th>
+<audio controls style="width: 250px;">
+<source src="./wavs/audio_1/wav-batch_4_sentence_0-linear.wav" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+</th>
+<th>
+<audio controls style="width: 250px;">
+<source src="./wavs/audio_2/wav-batch_4_sentence_0-linear.wav" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+</th>
+</tr>
+</table>
+</body>
+</html>

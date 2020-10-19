@@ -1,0 +1,21 @@
+Reference for MOS
+0	1	
+0	1	
+
+MOS
+0	1	
+1	0	
+1	0	
+1	0	
+0	1	
+0	1	
+
+Reference for ABTest
+1	2	
+
+ABTest
+2	1	
+1	2	
+2	1	
+1	2	
+
