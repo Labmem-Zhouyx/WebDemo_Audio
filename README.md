@@ -10,7 +10,7 @@ WebDemo_Audio/
 
 --demo_index.html
 
---wavs/
+--static/wavs/
 
 ----sentences.txt：Synthesized Text
 
