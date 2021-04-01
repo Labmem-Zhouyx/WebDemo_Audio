@@ -55,7 +55,7 @@ def generate_html(title, description, experiement_name, column_name, text_sample
                 html_file.append('<th>')
                 html_file.append('<audio controls style="width: 250px;">')
                 #若需要，在此处修改音频文件名格式
-                html_file.append('<source src="./wavs/audio_' + str(type_index) + '/wav-batch_' + str(audio_sample[exp_index][sample_index]) + '_sentence_0-linear.wav" type="audio/mpeg">')
+                html_file.append('<source src="./static/wavs/audio_' + str(type_index) + '/wav-batch_' + str(audio_sample[exp_index][sample_index]) + '_sentence_0-linear.wav" type="audio/mpeg">')
                 html_file.append('Your browser does not support the audio element.')
                 html_file.append('</audio>')
                 html_file.append('</th>')
@@ -91,7 +91,7 @@ experiement_name = ['Reference for MOS', 'MOS','Reference for ABTest', 'ABTest']
 column_name = [['A', 'B'], ['Sample 0','Sample 1'],['A','B'], ['Sample 0','Sample 1']]
 audio_sample = [[68,69], [70,71,72,73,74,75],[3], [0,1,2,4]]
 text_sample = []
-with open('./wavs/sentences.txt','r', encoding='utf-8') as f:
+with open('./static/wavs/sentences.txt','r', encoding='utf-8') as f:
     for line in f.readlines():
         text_sample.append(line.strip())
 text_sample = [list(np.array(text_sample)[sub_audio_sample]) for sub_audio_sample in audio_sample]
